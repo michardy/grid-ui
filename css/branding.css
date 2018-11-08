@@ -1,0 +1,22 @@
+/* Default branding
+ * Edit this file to change colors and their use
+ */
+
+:root {
+	/* Define the colors used */
+	--dark: #020122;
+	--light: #f2f3ae;
+	--emphasis: #f4442e;
+	--mid-light: #8ab0ab;
+	--mid-dark: #fc9e4f;
+
+	/* define usages of colors */
+	--background: var(--light);
+	--text: var(--dark);
+	--header: var(--mid-dark);
+	--title: var(--emphasis);
+	--header-text: var(--light);
+	--footer-text: var(--mid-dark);
+	--link: var(--mid-light);
+	--link-visited: var(--mid-dark);
+}

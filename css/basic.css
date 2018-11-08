@@ -1,0 +1,15 @@
+h2, h3, h4, h5, h6 {
+	font-family:sans-serif;
+}
+
+pre {
+	background-color: #eee;
+}
+
+a {
+	color: var(--link);
+}
+
+a:visited {
+	color: var(--link-visited);
+}
