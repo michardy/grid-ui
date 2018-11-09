@@ -21,6 +21,11 @@ header h1 a {
 	color: var(--title);
 }
 
+header h1 a:visited {
+	text-decoration:none;
+	color: var(--title);
+}
+
 @media (min-aspect-ratio: 4/3) {
 	.article-page main {
 		grid-column: 2 / 4;
