@@ -35,6 +35,20 @@ header h1 a {
 	}
 }
 
+@media (min-aspect-ratio: 4/3) {
+	main.search-results-page {
+		grid-column: 2 / 4;
+		grid-row: 4;
+	}
+}
+
+@media (max-aspect-ratio: 4/3) {
+	main.search-results-page {
+		grid-column: 1 / 4;
+		grid-row: 4;
+	}
+}
+
 footer {
 	grid-column: 1 / 5;
 	grid-row: 4;
@@ -45,4 +59,23 @@ footer {
 .navbar {
 	display:inline;
 	color: var(--header-text);
+}
+
+.lead-image {
+	grid-column: 1 / 5;
+	grid-row: 2 / 4;
+	height: 100%;
+}
+
+@media (min-aspect-ratio: 4/3) {
+	.lead-image {
+		width: 75%;
+		transform: translate(12.5%);
+	}
+}
+
+@media (max-aspect-ratio: 4/3) {
+	.lead-image {
+		width: 96%;
+	}
 }
