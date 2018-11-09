@@ -1,0 +1,151 @@
+h2, h3, h4, h5, h6 {
+	font-family:sans-serif;
+}
+
+a {
+	color: var(--link);
+}
+
+a:visited {
+	color: var(--link-visited);
+}
+
+.fatradio-button {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	size: 0px;
+}
+
+.fatradio-button+label {
+	border: 1px solid var(--pane-border);
+	background-color: var(--tab-deselected);
+	padding-left: 5px;
+	padding-right: 5px;
+	white-space: nowrap;
+	color: var(--tab-deselected-text);
+}
+
+.tabbar {
+	white-space: nowrap;
+}
+
+.fatradio-button:checked+label {
+	border-top: 1px solid var(--pane-border);
+	border-left: 1px solid var(--pane-border);
+	border-right: 1px solid var(--pane-border);
+	border-bottom: 1px solid var(--pane);
+	background-color: var(--pane);
+	color: var(--pane-text)
+}
+
+.pane {
+	padding-top: 1%;
+	padding-bottom: 1%;
+	border: 1px solid var(--pane-border);
+	background-color: var(--pane);
+}
+
+table {
+	border: 1px solid var(--table-border);
+	border: 1px solid var(--table);
+}
+
+td {
+	border: 1px solid var(--table-border);
+}
+
+.subtle-card {
+	padding-left: 1%;
+	padding-bottom: 1%;
+	background-color: var(--subtle-card)
+}
+
+.blatant-card {
+	padding-left: 1%;
+	padding-bottom: 1%;
+	background-color: var(--blatant-card)
+}
+
+li.card {
+	list-style-type: none;
+}
+
+.spoiler-content {
+	display: none;
+}
+
+.spoiler-title{
+	cursor: pointer;
+}
+
+.spoiler-title::before {
+	content: "▶ ";
+}
+
+.spoiler-button:checked+label .spoiler-title::before {
+	content: "▼ ";
+}
+
+.spoiler-button:checked+label+div {
+	display: block;
+}
+
+.spoiler-button {
+	display: none;
+}
+
+.taglist {
+	margin-left: -40px;
+}
+
+.taglist li {
+	list-style-type: none;
+	display: inline-block;
+}
+
+.taglist li a {
+	text-decoration: none;
+	border: 1px solid var(--tag-border);
+	background-color: var(--tag);
+	line-height: 40px;
+	margin: 5px;
+	padding: 5px;
+	color: var(--tag-text);
+}
+
+.button {
+	text-decoration: none;
+	border: none;
+	background-color: var(--button);
+	padding: 1%;
+	color: var(--button-major);
+}
+
+.button-major {
+	text-decoration: none;
+	border: none;
+	background-color: var(--button-major);
+	padding: 1%;
+	color: var(--button-major-text);
+}
+
+.button-minor {
+	text-decoration: none;
+	border: none;
+	background-color: var(--button-minor);
+	padding: 1%;
+	color: var(--button-major-minor);
+}
+
+input {
+	background: var(--light);
+	border: 1px solid var(--pane-border);
+	padding: 1%;
+}
+
+input.pane {
+	background: var(--light);
+	border: none;
+	padding: 1%;
+}
