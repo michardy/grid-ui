@@ -73,6 +73,14 @@ footer {
 	color: var(--header-text);
 }
 
+a.navbar {
+	color: var(--header-text);
+}
+
+a.navbar:visited {
+	color: var(--header-text);
+}
+
 .lead-image {
 	grid-column: 1 / 5;
 	grid-row: 2 / 4;
