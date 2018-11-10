@@ -21,43 +21,63 @@ header h1 a {
 	color: var(--title);
 }
 
+header h1 a:visited {
+	text-decoration:none;
+	color: var(--title);
+}
+
 @media (min-aspect-ratio: 4/3) {
-	main.article-page {
+	.article-page main {
 		grid-column: 2 / 4;
 		grid-row:2;
 	}
 }
 
 @media (max-aspect-ratio: 4/3) {
-	main.article-page {
+	.article-page main {
 		grid-column: 1 / 4;
 		grid-row:2;
 	}
 }
 
 @media (min-aspect-ratio: 4/3) {
-	main.search-results-page {
+	.search-results-page main {
 		grid-column: 2 / 4;
 		grid-row: 4;
 	}
 }
 
 @media (max-aspect-ratio: 4/3) {
-	main.search-results-page {
+	.search-results-page main {
 		grid-column: 1 / 4;
 		grid-row: 4;
 	}
+}
+
+.article-page footer {
+	grid-row: 4;
+}
+
+.search-results-page footer {
+	grid-row: 6;
 }
 
 footer {
 	grid-column: 1 / 5;
-	grid-row: 4;
 	text-align: center;
 	color: var(--footer-text);
 }
 
 .navbar {
 	display:inline;
+	color: var(--header-text);
+}
+
+a.navbar {
+	color: var(--header-text);
+}
+
+a.navbar:visited {
 	color: var(--header-text);
 }
 
