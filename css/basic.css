@@ -145,6 +145,12 @@ input {
 	padding: 1%;
 }
 
+textarea {
+	background: var(--light);
+	border: 1px solid var(--pane-border);
+	padding: 1%;
+}
+
 .pane input {
 	background: var(--light);
 	border: none;
