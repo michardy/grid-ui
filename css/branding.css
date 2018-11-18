@@ -36,5 +36,5 @@
 	--button-major: var(--emphasis);
 	--button-major-text: var(--light);
 	--button-minor: var(--mid-light);
-	--button-major-text: var(--dark);
+	--button-minor-text: var(--dark);
 }

@@ -136,13 +136,14 @@ li.card {
 	border: none;
 	background-color: var(--button-minor);
 	padding: 1%;
-	color: var(--button-major-minor);
+	color: var(--button-minor-text);
 }
 
 input {
 	background: var(--light);
 	border: 1px solid var(--pane-border);
 	padding: 1%;
+	color: inherit;
 }
 
 textarea {
@@ -155,5 +156,4 @@ textarea {
 	background: var(--light);
 	border: none;
 	padding: 1%;
-	color: inherit;
 }
