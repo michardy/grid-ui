@@ -2,10 +2,21 @@ body {
 	overflow-x:hidden;
 	display: grid;
 	width:100%;
-	grid-template-columns: repeat(4, 24.7%);
 	grid-auto-rows: minmax(100px, auto);
 	background-color: var(--background);
 	color: var(--text);
+}
+
+@media (min-aspect-ratio: 4/3) {
+	body {
+		grid-template-columns: repeat(4, 24.7%);
+	}
+}
+
+@media (max-aspect-ratio: 4/3) {
+	body {
+		grid-template-columns: repeat(4, 23.7%);
+	}
 }
 
 header {
