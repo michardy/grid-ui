@@ -120,7 +120,7 @@ li.card {
 	border: none;
 	background-color: var(--button);
 	padding: 1%;
-	color: var(--button-major);
+	color: var(--button-text);
 }
 
 .button-major {
