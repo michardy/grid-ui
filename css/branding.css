@@ -4,11 +4,11 @@
 
 :root {
 	/* Define the colors used */
-	--dark: #020122;
-	--light: #f2f3ae;
-	--emphasis: #f4442e;
-	--mid-light: #8ab0ab;
-	--mid-dark: #fc9e4f;
+	--dark: #000000;
+	--light: #FFFFFF;
+	--emphasis: #FF0000;
+	--mid-light: #CCCCCC;
+	--mid-dark: #000088;
 
 	/* define usages of colors */
 	--background: var(--light);
