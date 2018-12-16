@@ -1,3 +1,28 @@
+/* Grid UI
+ *
+ * MIT License
+ *
+ * Copyright (c) 2018 Michael Hardy
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in all
+ * copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
+ */
+
 h2, h3, h4, h5, h6 {
 	font-family:sans-serif;
 }
@@ -56,20 +81,106 @@ td {
 	border: 1px solid var(--table-border);
 }
 
+.cardview-host {
+	display: grid;
+	grid-auto-rows: minmax(50vh, auto);
+	grid-template-columns: 1fr;
+}
+
+.card {
+	box-sizing: border-box;
+	border-radius: 15px;
+}
+
+.non-card {
+	padding-left: 1%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	background-color: inherit;
+	color: inherit;
+}
+
 .subtle-card {
 	padding-left: 1%;
+	padding-top: 1%;
 	padding-bottom: 1%;
-	background-color: var(--subtle-card)
+	margin-top: 1%;
+	margin-bottom: 1%;
+	background-color: var(--subtle-card);
+	color: var(--subtle-card-text);
 }
 
 .blatant-card {
 	padding-left: 1%;
+	padding-top: 1%;
 	padding-bottom: 1%;
-	background-color: var(--blatant-card)
+	margin-top: 1%;
+	margin-bottom: 1%;
+	background-color: var(--blatant-card);
+	color: var(--blatant-card-text);
+}
+
+.card .icon {
+	position: absolute;
+	top: 2%;
+	right: 2%;
+}
+
+.card a.icon:visited {
+	color: inherit;
+}
+
+.cardview-host .tall-card {
+	height: 100vh;
 }
 
 li.card {
 	list-style-type: none;
+}
+
+.split-card {
+	position: relative;
+	height: 100%;
+}
+
+@media (min-aspect-ratio: 4/3) {
+	.split-right {
+		height: 100%;
+		width: 50%;
+		position: absolute;
+		top: 0px;
+		right: 0px;
+	}
+	.split-left {
+		height: 100%;
+		width: 50%;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+	}
+	.split-right.textembed {
+		width: 48%;
+	}
+	.split-left.textembed {
+		width: 48%;
+	}
+}
+
+@media (max-aspect-ratio: 4/3) {
+	.split-right {
+		height: 50%;
+		width: 100%;
+		position: absolute;
+		bottom: 0px;
+		left: 0px;
+	}
+	.split-left {
+		height: 50%;
+		width: 100%;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+	}
 }
 
 .spoiler-content {
@@ -123,6 +234,14 @@ li.card {
 	color: var(--button-text);
 }
 
+.subtle-card .button {
+	text-decoration: none;
+	border: none;
+	background-color: var(--button-minor);
+	padding: 1%;
+	color: var(--button-minor-text);
+}
+
 .button-major {
 	text-decoration: none;
 	border: none;
@@ -156,4 +275,21 @@ textarea {
 	background: var(--light);
 	border: none;
 	padding: 1%;
+}
+
+.fit-image {
+	object-fit: contain;
+	object-position: 50% 0;
+	box-sizing: border-box;
+	padding-top: 1%;
+}
+
+.textembed {
+	padding: 1%;
+}
+
+.embed {
+	width: 95%;
+	height: 92%;
+	padding: 3%;
 }
