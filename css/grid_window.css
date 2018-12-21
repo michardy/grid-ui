@@ -84,6 +84,17 @@ a.navbar:visited {
 	box-shadow: 5px 5px 5px 5px var(--dark);
 }
 
+.popover .view {
+	width: 97%;
+	height: calc(100% - 2em);
+	border: none;
+	transform: translate(-50%, calc(-50% + 1.75em));
+	position: absolute;
+	top: calc(50% - 1em);
+	left: 50%;
+	background-color: var(--light);
+}
+
 @media screen {
 	body {
 		display: grid;
