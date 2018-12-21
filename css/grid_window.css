@@ -125,11 +125,11 @@ a.navbar:visited {
 		}
 
 		.article-page main {
-			grid-column: 1 / 4;
+			grid-column: 1 / 5;
 		}
 
 		.search-results-page main {
-			grid-column: 1 / 4;
+			grid-column: 1 / 5;
 		}
 
 		.lead-image {
