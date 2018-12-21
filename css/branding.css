@@ -1,5 +1,19 @@
-/* Default branding
- * Edit this file to change colors and their use
+/*
+ * branding.css - A branding template for grid-ui
+ *
+ * Written in 2018 by Michael Hardy
+ *
+ * To the extent possible under law, the author(s) have dedicated all
+ * copyright and related and neighboring rights to this software to the
+ * public domain worldwide. This software is distributed without any
+ * warranty.
+ * You should have received a copy of the CC0 Public Domain Dedication
+ * along with this software. If not, see
+ * <http://creativecommons.org/publicdomain/zero/1.0/>
+ *
+ * Please note:
+ * ONLY THIS COPY of branding.css has been released under CC0. The rest
+ * of the Grid UI framework is released under the MIT license
  */
 
 :root {
