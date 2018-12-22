@@ -234,6 +234,9 @@ li.card {
 	background-color: var(--button);
 	padding: 1%;
 	color: var(--button-text);
+	font-family: sans;
+	font-size: inherit;
+	border-radius: 0;
 }
 
 .subtle-card .button {
@@ -245,18 +248,12 @@ li.card {
 }
 
 .button-major {
-	text-decoration: none;
-	border: none;
 	background-color: var(--button-major);
-	padding: 1%;
 	color: var(--button-major-text);
 }
 
 .button-minor {
-	text-decoration: none;
-	border: none;
 	background-color: var(--button-minor);
-	padding: 1%;
 	color: var(--button-minor-text);
 }
 
