@@ -87,39 +87,31 @@ td {
 
 .cardview-host {
 	display: grid;
-	grid-auto-rows: minmax(50vh, auto);
+	grid-auto-rows: minmax(15vh, auto);
 	grid-template-columns: 1fr;
 }
 
 .card {
 	box-sizing: border-box;
 	border-radius: 15px;
-}
-
-.non-card {
 	padding-left: 1%;
 	padding-top: 1%;
 	padding-bottom: 1%;
+	margin-top: 1%;
+	margin-bottom: 1%;
+}
+
+.non-card {
 	background-color: inherit;
 	color: inherit;
 }
 
 .subtle-card {
-	padding-left: 1%;
-	padding-top: 1%;
-	padding-bottom: 1%;
-	margin-top: 1%;
-	margin-bottom: 1%;
 	background-color: var(--subtle-card);
 	color: var(--subtle-card-text);
 }
 
 .blatant-card {
-	padding-left: 1%;
-	padding-top: 1%;
-	padding-bottom: 1%;
-	margin-top: 1%;
-	margin-bottom: 1%;
 	background-color: var(--blatant-card);
 	color: var(--blatant-card-text);
 }
