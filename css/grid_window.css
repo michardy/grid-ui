@@ -80,7 +80,7 @@ a.navbar:visited {
 	top: 10%;
 	width: 80%;
 	height: 80%;
-	z-index: 1;
+	z-index: 2;
 	box-shadow: 5px 5px 5px 5px var(--dark);
 }
 
