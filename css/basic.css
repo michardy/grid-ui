@@ -148,14 +148,14 @@ li.card {
 	.split-right {
 		grid-row: 2;
 		grid-column: 2;
-		width: 100%;
-		padding-left: 5px;
+		width: 99%;
+		padding-left: 1%;
 	}
 	.split-left {
 		grid-row: 2;
 		grid-column: 1;
-		width: 100%;
-		padding-right: 5px;
+		width: 99%;
+		padding-right: 1%;
 	}
 }
 
