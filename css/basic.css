@@ -22,6 +22,157 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
+ 
+ /* Color */
+
+.light {
+	background-color: var(--light);
+	color: var(--dark);
+	--pane: var(--mid-light);
+	--pane-border: var(--dark);
+	--pane-text: var(--light);
+	--tab-deselected: var(--mid-dark);
+	--tab-deselected-text: var(--light);
+}
+
+.dark {
+	background-color: var(--dark);
+	color: var(--light);
+	--pane: var(--mid-light);
+	--pane-border: var(--dark);
+	--pane-text: var(--light);
+	--tab-deselected: var(--mid-dark);
+	--tab-deselected-text: var(--light);
+}
+
+.mid-light {
+	background-color: var(--mid-light);
+	color: var(--light);
+	--pane: var(--light);
+	--pane-border: var(--dark);
+	--pane-text: var(--dark);
+	--tab-deselected: var(--mid-dark);
+	--tab-deselected-text: var(--light);
+}
+
+.mid-dark {
+	background-color: var(--mid-dark);
+	color: var(--light);
+	--pane: var(--light);
+	--pane-border: var(--dark);
+	--pane-text: var(--dark);
+	--tab-deselected: var(--mid-dark);
+	--tab-deselected-text: var(--light);
+}
+
+.emphasis {
+	background-color: var(--emphasis);
+	color: var(--dark);
+	--pane: var(--light);
+	--pane-border: var(--dark);
+	--pane-text: var(--dark);
+	--tab-deselected: var(--mid-dark);
+	--tab-deselected-text: var(--light);
+}
+
+/* coloring progress bars */
+
+/* Firefox */
+
+.light::-moz-progress-bar {
+	background-color: var(--light);
+}
+
+.dark::-moz-progress-bar {
+	background-color: var(--dark);
+}
+
+.mid-light::-moz-progress-bar {
+	background-color: var(--mid-light);
+}
+
+.mid-dark::-moz-progress-bar {
+	background-color: var(--mid-dark);
+}
+
+/* IE EdgeHTML (Note: I am not sure this works) */
+
+.light::-ms-fill {
+	background-color: var(--light);
+}
+
+.dark::-ms-fill {
+	background-color: var(--dark);
+}
+
+.mid-light::-ms-fill {
+	background-color: var(--mid-light);
+}
+
+.mid-dark::-ms-fill {
+	background-color: var(--mid-dark);
+}
+
+/* Webkit (Why does it need to be this complicated?) */
+
+.light ::-webkit-progress-value {
+	background-color: var(--light);
+}
+
+.dark ::-webkit-progress-value {
+	background-color: var(--dark);
+}
+
+.mid-light ::-webkit-progress-value {
+	background-color: var(--mid-light);
+}
+
+.mid-dark ::-webkit-progress-value {
+	background-color: var(--mid-dark);
+}
+
+.light ::-webkit-progress-bar {
+	background-color: inherit;
+}
+
+.dark ::-webkit-progress-value {
+	background-color: inherit;
+}
+
+.mid-light ::-webkit-progress-value {
+	background-color: inherit;
+}
+
+.mid-dark ::-webkit-progress-value {
+	background-color: inherit;
+}
+
+.button.light {
+	background-color: var(--light);
+	color: var(--dark);
+}
+
+.button.dark {
+	background-color: var(--dark);
+	color: var(--light);
+}
+
+.button.mid-light {
+	background-color: var(--mid-light);
+	color: var(--light);
+}
+
+.button.mid-dark {
+	background-color: var(--mid-dark);
+	color: var(--light);
+}
+
+.button.emphasis {
+	background-color: var(--emphasis);
+	color: var(--dark);
+}
+
+ /* Basic layout and widgets */
 
 h1, h2, h3, h4, h5, h6 {
 	font-family:sans-serif;
@@ -44,7 +195,8 @@ a:visited {
 	-moz-appearance: none;
 	appearance: none;
 	border: none;
-	padding: 0px;
+	padding: 0;
+	margin: 0;
 }
 
 .fatradio-button+label {
@@ -54,6 +206,8 @@ a:visited {
 	padding-right: 5px;
 	white-space: nowrap;
 	color: var(--tab-deselected-text);
+	margin: 0;
+	cursor: pointer;
 }
 
 .tabbar {
@@ -74,6 +228,7 @@ a:visited {
 	padding-bottom: 1%;
 	border: 1px solid var(--pane-border);
 	background-color: var(--pane);
+	color: var(--pane-text);
 }
 
 table {
@@ -99,21 +254,6 @@ td {
 	padding-bottom: 1%;
 	margin-top: 1%;
 	margin-bottom: 1%;
-}
-
-.non-card {
-	background-color: inherit;
-	color: inherit;
-}
-
-.subtle-card {
-	background-color: var(--subtle-card);
-	color: var(--subtle-card-text);
-}
-
-.blatant-card {
-	background-color: var(--blatant-card);
-	color: var(--blatant-card-text);
 }
 
 .card .icon {
@@ -179,6 +319,12 @@ li.card {
 	line-height: 2em;
 }
 
+.pane p {
+	padding-left: 1%;
+	padding-right: 1%;
+	line-height: 2em;
+}
+
 .spoiler-content {
 	display: none;
 }
@@ -225,49 +371,46 @@ li.card {
 .button {
 	text-decoration: none;
 	border: none;
-	background-color: var(--button);
-	padding: 1%;
-	color: var(--button-text);
+	padding: 2vmin;
+	margin: 1vmin;
 	font-family: sans;
 	font-size: inherit;
 	border-radius: 0;
+	background-color: var(--button);
+	color: var(--button-text);
 }
 
-.subtle-card .button {
-	text-decoration: none;
-	border: none;
-	background-color: var(--button-minor);
-	padding: 1%;
-	color: var(--button-minor-text);
-}
-
-.button-major {
-	background-color: var(--button-major);
-	color: var(--button-major-text);
-}
-
-.button-minor {
-	background-color: var(--button-minor);
-	color: var(--button-minor-text);
+.mid-dark .button {
+	background-color: var(--mid-light);
+	color: var(--light);
 }
 
 input {
-	background: var(--light);
 	border: 1px solid var(--pane-border);
 	padding: 1%;
-	color: inherit;
+	margin-left: 1%;
+	margin-bottom: 1%;
+	background-color: var(--pane);
+	color: var(--pane-text);
+}
+
+label {
+	margin-left: 1%;
+}
+
+progress {
+	margin-left: 1%;
+	background-color: inherit !important;
+	color: inherit !important;
 }
 
 textarea {
-	background: var(--light);
 	border: 1px solid var(--pane-border);
+	background-color: var(--pane);
+	color: var(--pane-text);
 	padding: 1%;
-}
-
-.pane input {
-	background: var(--light);
-	border: none;
-	padding: 1%;
+	margin-left: 1%;
+	margin-bottom: 1%;
 }
 
 .fit-image {
@@ -281,10 +424,26 @@ textarea {
 }
 
 .textembed {
-	padding: 1%;
+	padding: 4%;
+	background-color:var(--pane);
+	color:var(--pane-text);
 }
 
 .embed {
 	width: 95%;
 	padding: 1%;
+}
+
+.frame {
+	background-color: var(--frame-base);
+	color: var(--frame-text);
+	--pane: var(--frame-pane);
+	--pane-border: var(--frame-pane-border);
+	--pane-text: var(--frame-pane-text);
+	--tab-deselected: var(--frame-deselect);
+	--tab-deselected-text: var(--frame-deselect-text);
+}
+
+.tabcrumb {
+	display: none;
 }
