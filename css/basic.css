@@ -200,25 +200,25 @@ a:visited {
 }
 
 .fatradio-button+label {
-	border: 1px solid var(--pane-border);
 	background-color: var(--tab-deselected);
 	padding-left: 5px;
 	padding-right: 5px;
+	padding-top: 5px;
 	white-space: nowrap;
 	color: var(--tab-deselected-text);
 	margin: 0;
 	cursor: pointer;
+	border-top-left-radius: 5pt;
+	border-top-right-radius: 5pt;
 }
 
 .tabbar {
 	white-space: nowrap;
+	margin-left: 1%;
+	margin-right: 1%;
 }
 
 .fatradio-button:checked+label {
-	border-top: 1px solid var(--pane-border);
-	border-left: 1px solid var(--pane-border);
-	border-right: 1px solid var(--pane-border);
-	border-bottom: 1px solid var(--pane);
 	background-color: var(--pane);
 	color: var(--pane-text)
 }
@@ -226,9 +226,9 @@ a:visited {
 .pane {
 	padding-top: 1%;
 	padding-bottom: 1%;
-	border: 1px solid var(--pane-border);
 	background-color: var(--pane);
 	color: var(--pane-text);
+	border-radius: 5pt;
 }
 
 table {
@@ -248,7 +248,7 @@ td {
 
 .card {
 	box-sizing: border-box;
-	border-radius: 15px;
+	border-radius: 15pt;
 	padding-left: 1%;
 	padding-top: 1%;
 	padding-bottom: 1%;
@@ -375,7 +375,7 @@ li.card {
 	margin: 1vmin;
 	font-family: sans;
 	font-size: inherit;
-	border-radius: 0;
+	border-radius: 5pt;
 	background-color: var(--button);
 	color: var(--button-text);
 }
@@ -392,6 +392,7 @@ input {
 	margin-bottom: 1%;
 	background-color: var(--pane);
 	color: var(--pane-text);
+	border-radius: 5pt;
 }
 
 label {
@@ -399,9 +400,24 @@ label {
 }
 
 progress {
+	-webkit-appearance: none;
+	appearance: none;
 	margin-left: 1%;
 	background-color: inherit !important;
 	color: inherit !important;
+	border-radius: 5pt;
+}
+
+progress::-moz-progress-bar {
+	border-radius: 5pt;
+}
+
+progress::-webkit-progress-bar {
+	border-radius: 5pt;
+}
+
+progress::-webkit-progress-value {
+	border-radius: 5pt;
 }
 
 textarea {
@@ -411,6 +427,7 @@ textarea {
 	padding: 1%;
 	margin-left: 1%;
 	margin-bottom: 1%;
+	border-radius: 5pt;
 }
 
 .fit-image {
@@ -427,6 +444,7 @@ textarea {
 	padding: 4%;
 	background-color:var(--pane);
 	color:var(--pane-text);
+	border-radius: 5pt;
 }
 
 .embed {

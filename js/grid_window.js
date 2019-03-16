@@ -79,5 +79,4 @@ var grid_ui = {
 	}
 };
 
-console.log('test');
 grid_ui.init();
