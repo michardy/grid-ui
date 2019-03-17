@@ -115,35 +115,35 @@
 
 /* Webkit (Why does it need to be this complicated?) */
 
-.light ::-webkit-progress-value {
+.light::-webkit-progress-value {
 	background-color: var(--light);
 }
 
-.dark ::-webkit-progress-value {
+.dark::-webkit-progress-value {
 	background-color: var(--dark);
 }
 
-.mid-light ::-webkit-progress-value {
+.mid-light::-webkit-progress-value {
 	background-color: var(--mid-light);
 }
 
-.mid-dark ::-webkit-progress-value {
+.mid-dark::-webkit-progress-value {
 	background-color: var(--mid-dark);
 }
 
-.light ::-webkit-progress-bar {
+.light::-webkit-progress-bar {
 	background-color: inherit;
 }
 
-.dark ::-webkit-progress-value {
+.dark::-webkit-progress-bar {
 	background-color: inherit;
 }
 
-.mid-light ::-webkit-progress-value {
+.mid-light::-webkit-progress-bar {
 	background-color: inherit;
 }
 
-.mid-dark ::-webkit-progress-value {
+.mid-dark::-webkit-progress-bar {
 	background-color: inherit;
 }
 
@@ -406,6 +406,7 @@ progress {
 	background-color: inherit !important;
 	color: inherit !important;
 	border-radius: 5pt;
+	border: 1px solid var(--pane-border);
 }
 
 progress::-moz-progress-bar {
