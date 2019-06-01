@@ -249,6 +249,7 @@ td {
 .card {
 	box-sizing: border-box;
 	border-radius: 15pt;
+	position: relative;
 	padding-left: 1%;
 	padding-top: 1%;
 	padding-bottom: 1%;
@@ -273,7 +274,6 @@ li.card {
 
 .split-card {
 	display: grid;
-	position: relative;
 	height: 100%;
 }
 
@@ -464,5 +464,9 @@ textarea {
 }
 
 .tabcrumb {
+	display: none;
+}
+
+.hidden {
 	display: none;
 }
