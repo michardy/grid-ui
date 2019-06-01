@@ -18,18 +18,19 @@
 
 :root {
 	/* Define the colors used */
-	--dark: #020122;
-	--light: #f2f3ae;
-	--emphasis: #f4442e;
-	--mid-light: #8ab0ab;
-	--mid-dark: #fc9e4f;
+	--dark: #2E2623;
+	--light: #F1EBE7;
+	--emphasis: #E8492E;
+	--mid-light: #DCC957;
+	--mid-dark: #7F784D;
+
 
 	/* define usages of colors */
-	--background: var(--light);
-	--text: var(--dark);
-	--header: var(--mid-dark);
+	--background: var(--dark);
+	--text: var(--light);
+	--header: var(--mid-light);
 	--title: var(--emphasis);
-	--header-text: var(--light);
+	--header-text: var(--dark);
 	--footer-text: var(--mid-dark);
 	--subtle-card: var(--mid-light);
 	--blatant-card: var(--mid-dark);
