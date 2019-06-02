@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!--
+MIT License
+
+Copyright (c) 2019 Michael Hardy
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+-->
+<html lang="en-US">
+	<head>
+		<meta charset="utf-8"/>
+		<meta id="meta" name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<!--Fixes a wierd bug in the chrome dev tools-->
+		<meta name="viewport" content="width=device-width"/>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michardy/grid-ui@6/css/branding.min.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michardy/grid-ui@6/css/grid_window.min.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michardy/grid-ui@6/css/basic.min.css">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+		<title>Cards | Grid-UI</title>
+	</head>
+	<body class="cardview-page">
+		<div class="card mid-light popover" id="popover"></div>
+		<header>
+			<h1><a href="/">Grid-UI</a></h1>
+			<a class="navbar" href="https://github.com/michardy/grid-ui">Repository</a>&nbsp;
+		</header>
+		<main class="cardview-host">
+			<div class="card">
+				<h2>Cards</h2>
+				<article id="about">
+					<p>
+						This is an example of a page of cards.
+						Cards can also be used in other pages.
+						The code is available on <a href="">GitHub</a>
+					</p>
+				</article>
+			</div>
+			<div class="card mid-dark split-card">
+				<h3 class="title">Split Card</h3>
+				<article class="split-left">
+					<p>
+						Cards can be split in half to display two items.
+					</p>
+				</article>
+				<div class="split-right">
+					
+				</div>
+			</div>
+			<div class="card">
+				<h3 class="title">Buttons</h3>
+				<article>
+					<p>
+						Buttons can also be placed in multiple places in a card.
+						Inline buttons behave as expected.
+						Buttons of class <code>icon</code> will try to display in the corner of a card.
+					</p>
+					<button class="button emphasis">Inline Button</button>
+					<a class="button" href="#">Inline Link button</a>
+				</article>
+				<a class="button icon" href="#">Icon Link Button</a>
+			</div>
+			<div class="card mid-dark">
+				<h2 class="title">Another card</h2>
+				<article>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nibh odio, tristique eu pellentesque a, mattis eget dolor. Fusce eu risus orci. Curabitur in ipsum iaculis, hendrerit mi a, finibus nisi. Donec mauris nibh, aliquet non nisl vehicula, condimentum laoreet eros. Integer condimentum consectetur ligula sed pellentesque. In scelerisque enim non enim luctus, quis facilisis dui porta. In hac habitasse platea dictumst. Vestibulum pellentesque, dolor at ultrices fermentum, ligula leo pharetra nulla, vitae porttitor purus purus vel odio. 
+					</p>
+				</article>
+			</div>
+		</main>
+		<footer>
+			<div>
+				&copy; 2019 Michael Hardy
+				<br>
+				Licensed under the MIT License
+			</div>
+		</footer>
+	</body>
+	<script src="https://cdn.jsdelivr.net/gh/michardy/grid-ui@6/js/grid_window.min.js"></script>
+</html>
