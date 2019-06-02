@@ -73,7 +73,7 @@ a.navbar:visited {
 	height: 100%;
 }
 
-.popover {
+.card.popover {
 	display: none;
 	position: fixed;
 	right: 10%;
@@ -110,6 +110,10 @@ a.navbar:visited {
 			grid-template-columns: repeat(4, 24.7%);
 		}
 
+		.article-page .sidebar {
+			grid-column: 1;
+		}
+
 		.article-page main {
 			grid-column: 2 / 4;
 		}
@@ -122,6 +126,19 @@ a.navbar:visited {
 	@media (max-aspect-ratio: 4/3) {
 		body {
 			grid-template-columns: repeat(4, 23.7%);
+		}
+
+		.article-page .sidebar {
+			grid-column: 1 / 5;
+			grid-row: 2;
+		}
+
+		.article-page .sidebar+main {
+			grid-row: 3;
+		}
+
+		.article-page .sidebar+main+footer {
+			grid-row: 5;
 		}
 
 		.article-page main {
