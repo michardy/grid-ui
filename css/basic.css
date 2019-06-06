@@ -38,8 +38,8 @@
 .dark {
 	background-color: var(--dark);
 	color: var(--light);
-	--pane: var(--mid-light);
-	--pane-border: var(--dark);
+	--pane: var(--dark);
+	--pane-border: var(--mid-light);
 	--pane-text: var(--light);
 	--tab-deselected: var(--mid-dark);
 	--tab-deselected-text: var(--light);
