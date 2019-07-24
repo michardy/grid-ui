@@ -380,6 +380,10 @@ li.card {
 	color: var(--button-text);
 }
 
+.button:visited {
+	color: var(--button-text);
+}
+
 .mid-dark .button {
 	background-color: var(--mid-light);
 	color: var(--light);
