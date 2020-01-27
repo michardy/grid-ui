@@ -244,6 +244,7 @@ td {
 	display: grid;
 	grid-auto-rows: minmax(15vh, auto);
 	grid-template-columns: 1fr;
+	row-gap: 1vh;
 }
 
 .card {
