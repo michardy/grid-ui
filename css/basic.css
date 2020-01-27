@@ -476,11 +476,11 @@ textarea {
 	display: none;
 }
 
-.framembed-container {
+.frameembed-container {
 	position: relative;
 }
 
-.framembed {
+.frameembed {
 	position: absolute;
 	top: 0;
 	left: 0;
